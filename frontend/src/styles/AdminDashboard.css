@@ -1,0 +1,161 @@
+.admin-dashboard-loading {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.admin-dashboard-spinner {
+  animation: spin 1s linear infinite;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  border: 2px solid transparent;
+  border-bottom: 2px solid #2563eb;
+  margin: 0 auto;
+}
+
+.admin-dashboard-loading-text {
+  margin-top: 1rem;
+  color: #64748b;
+}
+
+.admin-dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.admin-dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.admin-dashboard-subtitle {
+  color: #64748b;
+}
+
+.admin-dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.admin-dashboard-stat-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 2px solid #bfdbfe;
+  padding: 1.5rem;
+}
+
+.admin-dashboard-stat-content {
+  display: flex;
+  align-items: center;
+}
+
+.admin-dashboard-stat-icon {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.admin-dashboard-stat-icon.users { background-color: #dbeafe; }
+.admin-dashboard-stat-icon.courses { background-color: #bfdbfe; }
+.admin-dashboard-stat-icon.enrollments { background-color: #93c5fd; }
+.admin-dashboard-stat-icon.revenue { background-color: #60a5fa; }
+
+.admin-dashboard-stat-details {
+  margin-left: 1rem;
+}
+
+.admin-dashboard-stat-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.admin-dashboard-stat-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.admin-dashboard-stat-change {
+  font-size: 0.875rem;
+  color: #2563eb;
+}
+
+.admin-dashboard-activity {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 2px solid #bfdbfe;
+  padding: 1.5rem;
+}
+
+.admin-dashboard-activity-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+.admin-dashboard-activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.admin-dashboard-activity-item {
+  background: linear-gradient(to bottom right, #eff6ff, #dbeafe);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  border-left: 4px solid #3b82f6;
+  transition: all 0.2s;
+}
+
+.admin-dashboard-activity-item:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard-activity-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.admin-dashboard-activity-icon {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  font-size: 1.125rem;
+}
+
+.admin-dashboard-activity-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.admin-dashboard-activity-message {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1e3a8a;
+  line-height: 1.25;
+  margin-bottom: 0.25rem;
+}
+
+.admin-dashboard-activity-time {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,61 @@
+.programmes-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.programmes-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #00204a;
+  margin-bottom: 40px;
+}
+
+.programmes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.programme-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 25px 20px;
+  border: 2px solid #e5e7eb;
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.programme-card:hover {
+  border-color: #0033a0;
+  transform: translateY(-6px);
+}
+
+.programme-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.programme-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #001f4d;
+}
+
+.apply-btn {
+  background: #c8102e;
+  color: white;
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  background: #a10d26;
+}

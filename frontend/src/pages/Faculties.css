@@ -1,0 +1,68 @@
+/* Faculties Page Styles */
+.faculties-container {
+  padding: 3rem 0;
+  min-height: 100vh;
+  background: #f0f4f8;
+}
+
+.faculties-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.faculties-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  color: #0f172a;
+  letter-spacing: 0.05em;
+}
+
+.faculties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+}
+
+.faculty-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.faculty-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.faculty-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.4s ease;
+}
+
+.faculty-card:hover .faculty-icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.faculty-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e40af;
+  letter-spacing: 0.02em;
+}
+
+.faculty-description {
+  color: #475569;
+  line-height: 1.75;
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+  font-weight: 500;
+}

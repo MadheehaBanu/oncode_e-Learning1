@@ -1,0 +1,181 @@
+/* Main Container */
+.faculties-container {
+  min-height: 100vh;
+  background: #f0f4f8;
+  padding-top: 100px;
+}
+
+/* Hero */
+.faculties-hero {
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(63, 81, 181, 0.3);
+}
+
+.faculties-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.faculties-hero-content p {
+  font-size: 1.375rem;
+  opacity: 0.95;
+  margin-top: 0.75rem;
+  font-weight: 500;
+}
+
+/* Grid Section */
+.faculties-grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.faculties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+}
+
+/* Individual Card */
+.faculty-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+}
+
+.faculty-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Icon Box */
+.faculty-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.4s ease;
+}
+
+.faculty-card:hover .faculty-icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Texts */
+.faculty-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.02em;
+}
+
+.faculty-description {
+  color: #475569;
+  line-height: 1.75;
+  margin-bottom: 1.8rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.program-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 1rem;
+}
+
+.program-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.program-chip {
+  padding: 0.35rem 1rem;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: #e0e7ff;
+  color: #3730a3;
+  box-shadow: 0 1px 3px rgba(99, 102, 241, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.program-chip:hover {
+  background: #c7d2fe;
+}
+
+/* Learn More Button */
+.faculty-button {
+  display: block;
+  width: 100%;
+  padding: 0.85rem 1.75rem;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+  transition: background 0.3s ease, opacity 0.3s ease;
+  margin-top: 1.25rem;
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.4);
+}
+
+.faculty-button:hover {
+  background: linear-gradient(135deg, #4338ca 0%, #2563eb 100%);
+  opacity: 0.95;
+}
+
+/* CTA Section */
+.cta-section {
+  background: #e0e7ff;
+  padding: 5rem 0;
+  text-align: center;
+  box-shadow: inset 0 0 30px #c7d2fe;
+}
+
+.cta-content h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.cta-content p {
+  color: #475569;
+  font-size: 1.2rem;
+  margin: 1rem 0 2.5rem;
+  font-weight: 500;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
+  color: white;
+  padding: 1.25rem 2.5rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.5);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #4338ca 0%, #2563eb 100%);
+  box-shadow: 0 8px 28px rgba(37, 99, 235, 0.7);
+}

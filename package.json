@@ -1,0 +1,37 @@
+{
+  "name": "oncode-elearning",
+  "version": "1.0.0",
+  "description": "OnCode - Modern E-Learning Platform",
+  "scripts": {
+    "start": "node start-project.js",
+    "dev": "node start-project.js",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "setup": "npm run install:all && cd backend && npm run init-db",
+    "build": "cd frontend && CI=false npm run build",
+    "build:test": "cd frontend && npm run build",
+    "test:backend": "cd backend && node test-connection.js",
+    "test:deploy": "node test-before-deploy.js",
+    "verify": "node verify-setup.js",
+    "clean": "rm -rf node_modules frontend/node_modules backend/node_modules",
+    "clean:build": "rm -rf frontend/build"
+  }
+,
+  "keywords": [
+    "e-learning",
+    "education",
+    "react",
+    "firebase"
+  ],
+  "author": "OnCode Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MadheehaBanu/e-Learning.git"
+  }
+}
